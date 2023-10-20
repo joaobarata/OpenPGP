@@ -43,7 +43,7 @@ namespace OpenPGP
             [OSParameter(Description = "Private key password")]
             string Password,
             [OSParameter(Description = "Private key binary file in PEM format")]
-            out byte[] Private_Key,
+            out byte[] PrivateKey,
             [OSParameter(Description = "Public key binary file in PEM format")]
             out byte[] PublicKey);
     }
