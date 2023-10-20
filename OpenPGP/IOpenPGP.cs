@@ -2,13 +2,13 @@
 
 namespace OpenPGP
 {
-    [OSInterface(Description = "OpenPGP encryption and decryption using BouncyCastle.Cryptography C# library", IconResourceName = "OpenPGP.resources.logo.png", Name = "ArdoHTTP")]
-    internal interface IOpenPGP
+    [OSInterface(Description = "OpenPGP encryption and decryption using BouncyCastle.Cryptography C# library", IconResourceName = "OpenPGP.resources.logo.png", Name = "OpenPGP")]
+    public interface IOpenPGP
     {
         /// <summary>
         /// Decrypts binary file using the private key
         /// </summary>
-        [OSAction(Description = "Decrypts binary file using the private key", IconResourceName = "OpenPGP.resources.logo.png", ReturnName = "File_Encrypted")]
+        [OSAction(Description = "Decrypts binary file using the private key", IconResourceName = "OpenPGP.resources.logo.png", ReturnName = "File_Decrypted")]
         public byte[] File_Decrypt(
             [OSParameter(Description = "Encrypted binary file")]
             byte[] File_Encrypted,
@@ -20,7 +20,7 @@ namespace OpenPGP
         /// <summary>
         /// Decrypts binary file using the private key
         /// </summary>
-        [OSAction(Description = "Encrypts binary file using the public key", IconResourceName = "OpenPGP.resources.logo.png", ReturnName = "File_Decrypted")]
+        [OSAction(Description = "Encrypts binary file using the public key", IconResourceName = "OpenPGP.resources.logo.png", ReturnName = "File_Encrypted")]
         public byte[] File_Encrypt(
             [OSParameter(Description = "Plain Text binary file.")]
             byte[] File_PlainText,
