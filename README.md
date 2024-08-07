@@ -2,8 +2,6 @@
 
 Repository for the OpenPGP ODC component that implements the OpenPGP protocol using the BouncyCastle.Cryptography C# library
 
-![Extension Content][imglink]
-
 ## Feature List
 
 - Generate a private/public keypair to be used with the OpenPGP
@@ -29,5 +27,3 @@ Repository for the OpenPGP ODC component that implements the OpenPGP protocol us
 - Zip, (default)
 - ZLib
 - BZip2
-
-[imglink]: ./resources/BinaryConcat.png
